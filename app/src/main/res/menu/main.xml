@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+            android:id="@+id/Nuovo"
+            app:showAsAction="ifRoom"
+            android:title="@string/Nuovo"/>
+    <item
+            android:id="@+id/Utente"
+            android:title="@string/utente"/>
+
+    <item
+            android:id="@+id/Impostazioni"
+            android:title="@string/Impostazioni"/>
+
+    <item
+            android:id="@+id/TreeDom"
+            android:title="@string/treedom"/>
+
+
+</menu>
