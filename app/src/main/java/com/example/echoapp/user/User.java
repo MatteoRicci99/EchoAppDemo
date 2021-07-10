@@ -1,37 +1,50 @@
 package com.example.echoapp.user;
 
-import com.example.echoapp.auto.Auto;
 
-import java.util.Date;
-import java.util.List;
+import java.util.UUID;
 
 public class User {
 
+    private UUID ID;
     private String nome;
     private String cognome;
-    private Date annoNascita;
     private String email;
     private String password;
     private int immobili;
     private int utenze;
-    private List<Auto> auto;
+    private int auto;
 
-    public User(String nome, String cognome, String email, String password) {
+    public User(UUID ID, String nome, String cognome) {
+        this.ID = ID;
+        this.nome = nome;
+        this.cognome = cognome;
+    }
+
+    public User(UUID ID, String nome, String cognome, String email, String password) {
+        this.ID = ID;
         this.nome = nome;
         this.cognome = cognome;
         this.email = email;
         this.password = password;
     }
 
-    public User(String nome, String cognome, Date annoNascita, String email, String password, int immobili, int utenze, List<Auto> auto) {
+    public User(UUID ID, String nome, String cognome, String email, String password, int immobili, int utenze, int auto) {
+        this.ID = ID;
         this.nome = nome;
         this.cognome = cognome;
-        this.annoNascita = annoNascita;
         this.email = email;
         this.password = password;
         this.immobili = immobili;
         this.utenze = utenze;
         this.auto = auto;
+    }
+
+    public UUID getID() {
+        return ID;
+    }
+
+    public void setID(UUID ID) {
+        this.ID = ID;
     }
 
     public String getNome() {
@@ -48,14 +61,6 @@ public class User {
 
     public void setCognome(String cognome) {
         this.cognome = cognome;
-    }
-
-    public Date getAnnoNascita() {
-        return annoNascita;
-    }
-
-    public void setAnnoNascita(Date annoNascita) {
-        this.annoNascita = annoNascita;
     }
 
     public String getEmail() {
@@ -90,20 +95,22 @@ public class User {
         this.utenze = utenze;
     }
 
-    public List<Auto> getAuto() {
+    public int getAuto() {
         return auto;
     }
 
-    public void setAuto(List<Auto> auto) {
+    public void setAuto(int auto) {
         this.auto = auto;
     }
+
+
 
     @Override
     public String toString() {
         return "User{" +
-                "nome='" + nome + '\'' +
+                "ID=" + ID +
+                ", nome='" + nome + '\'' +
                 ", cognome='" + cognome + '\'' +
-                ", annoNascita=" + annoNascita +
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
                 ", immobili=" + immobili +

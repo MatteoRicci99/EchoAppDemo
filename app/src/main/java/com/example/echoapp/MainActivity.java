@@ -4,6 +4,7 @@ import android.content.Intent;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import com.example.echoapp.home.HomeActivity;
+import com.example.echoapp.login.LoginActivity;
 ;
 
 public class MainActivity extends AppCompatActivity {
@@ -13,6 +14,5 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         startActivity(new Intent(this, HomeActivity.class));
         finish();
-
     }
 }

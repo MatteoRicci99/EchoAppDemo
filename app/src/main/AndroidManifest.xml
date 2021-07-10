@@ -16,7 +16,8 @@
             android:allowBackup="true"
             android:label="ECHO"
             android:supportsRtl="true"
-            android:theme="@style/Theme.EchoApp">
+            android:theme="@style/Theme.EchoApp"
+            android:fullBackupContent="true">
 
 
         <activity android:name=".MainActivity">
@@ -38,6 +39,11 @@
                 android:name=".treedom.TreedomActivity"
                 android:label="TreeDom">
         </activity>
+
+        <activity android:name=".login.LoginActivity"/>
+
+        <activity android:name=".login.RegistrationActivity"/>
+
     </application>
 
 </manifest>

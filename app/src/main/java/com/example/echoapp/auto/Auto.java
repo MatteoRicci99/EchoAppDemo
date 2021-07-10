@@ -1,21 +1,32 @@
 package com.example.echoapp.auto;
 
 import java.util.Date;
+import java.util.UUID;
 
 public class Auto {
 
+    private UUID ID;
     private String Marca;
     private String Modello;
     private int Cilindrata;
     private Date Anno;
     private String Euro;
 
-    public Auto(String marca, String modello, int cilindrata, Date anno, String euro) {
+    public Auto(UUID ID, String marca, String modello, int cilindrata, Date anno, String euro) {
+        this.ID = ID;
         Marca = marca;
         Modello = modello;
         Cilindrata = cilindrata;
         Anno = anno;
         Euro = euro;
+    }
+
+    public UUID getID() {
+        return ID;
+    }
+
+    public void setID(UUID ID) {
+        this.ID = ID;
     }
 
     public String getMarca() {
@@ -62,13 +73,12 @@ public class Auto {
     @Override
     public String toString() {
         return "Auto{" +
-                "Marca='" + Marca + '\'' +
+                "ID=" + ID +
+                ", Marca='" + Marca + '\'' +
                 ", Modello='" + Modello + '\'' +
                 ", Cilindrata=" + Cilindrata +
                 ", Anno=" + Anno +
                 ", Euro='" + Euro + '\'' +
                 '}';
     }
-
-
 }

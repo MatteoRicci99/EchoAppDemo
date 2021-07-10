@@ -8,15 +8,16 @@ public class DatabaseOperations {
 
     public DatabaseOperations() throws SQLException {
 
-        try {
-            db = new DBManager(DBManager.JDBC_Driver_SQLite, DBManager.JDBC_URL_SQLite);
+            try {
+                db = new DBManager(DBManager.JDBC_Driver_SQLite, DBManager.JDBC_URL_SQLite);
 
-//            db.executeUpdate("INSERT INTO Utente (Nome, Cognome) VALUES ('Matteo', 'Ricci')");
+                db.executeUpdate("INSERT INTO Utente (Nome, Cognome) VALUES ('Matteo', 'Ricci')");
 
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        } catch (java.sql.SQLException throwables) {
-            throwables.printStackTrace();
+            } catch (ClassNotFoundException e) {
+                e.printStackTrace();
+            } catch (java.sql.SQLException throwables) {
+                throwables.printStackTrace();
+            }
         }
+
     }
-}

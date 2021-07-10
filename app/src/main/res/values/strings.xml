@@ -20,4 +20,11 @@
     <string name="accedi">ACCEDI</string>
     <string name="Email">Email</string>
     <string name="Password">Password</string>
+    <string name="cognome">Cognome</string>
+    <string name="nome">Nome</string>
+    <string name="data_di_nascita">Data di nascita</string>
+    <string name="registrazione">REGISTRAZIONE</string>
+    <string name="n_immobili">N° Immobili</string>
+    <string name="n_auto">N° Auto</string>
+    <string name="n_utenze_totali">N° Utenze Totali</string>
 </resources>

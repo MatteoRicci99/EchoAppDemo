@@ -25,21 +25,21 @@
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
     <loaded-nodes>
-      <connection connection-id="4d9cd1e8-4538-46bc-a56b-2a46a6a932cb">
+      <connection connection-id="556623b8-0e2d-4f17-b63c-abef6b33db56">
         <schema name="main" object-types="table, view, constraint, index, column, dataset trigger" />
       </connection>
     </loaded-nodes>
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
-    <connection id="4d9cd1e8-4538-46bc-a56b-2a46a6a932cb">
-      <console name="Echo" type="STANDARD" schema="main" session="Main" />
+    <connection id="556623b8-0e2d-4f17-b63c-abef6b33db56">
+      <console name="Utente" type="STANDARD" schema="main" session="Main" />
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
     <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
-    <connection id="4d9cd1e8-4538-46bc-a56b-2a46a6a932cb" />
+    <connection id="556623b8-0e2d-4f17-b63c-abef6b33db56" />
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />
@@ -67,9 +67,9 @@
   </component>
   <component name="DBNavigator.Project.Settings">
     <connections>
-      <connection id="4d9cd1e8-4538-46bc-a56b-2a46a6a932cb" active="true">
+      <connection id="556623b8-0e2d-4f17-b63c-abef6b33db56" active="true">
         <database>
-          <name value="Echo" />
+          <name value="Utente" />
           <description value="" />
           <database-type value="SQLITE" />
           <config-type value="BASIC" />
@@ -82,7 +82,7 @@
           <port value="" />
           <database value="" />
           <files>
-            <file path="$PROJECT_DIR$/app/src/Echo.db" schema="main" />
+            <file path="$PROJECT_DIR$/app/src/Utente.db" schema="main" />
           </files>
           <type value="NONE" />
           <user value="" />
