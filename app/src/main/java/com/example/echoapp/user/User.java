@@ -5,7 +5,7 @@ import java.util.UUID;
 
 public class User {
 
-    private UUID ID;
+    private int ID;
     private String nome;
     private String cognome;
     private String email;
@@ -14,13 +14,13 @@ public class User {
     private int utenze;
     private int auto;
 
-    public User(UUID ID, String nome, String cognome) {
+    public User(int ID, String nome, String cognome, int immobili, int utenze, int auto) {
         this.ID = ID;
         this.nome = nome;
         this.cognome = cognome;
     }
 
-    public User(UUID ID, String nome, String cognome, String email, String password) {
+    public User(int ID, String nome, String cognome, String email, String password) {
         this.ID = ID;
         this.nome = nome;
         this.cognome = cognome;
@@ -28,7 +28,7 @@ public class User {
         this.password = password;
     }
 
-    public User(UUID ID, String nome, String cognome, String email, String password, int immobili, int utenze, int auto) {
+    public User(int ID, String nome, String cognome, String email, String password, int immobili, int utenze, int auto) {
         this.ID = ID;
         this.nome = nome;
         this.cognome = cognome;
@@ -39,11 +39,11 @@ public class User {
         this.auto = auto;
     }
 
-    public UUID getID() {
+    public int getID() {
         return ID;
     }
 
-    public void setID(UUID ID) {
+    public void setID(int ID) {
         this.ID = ID;
     }
 
