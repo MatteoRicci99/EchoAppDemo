@@ -38,14 +38,15 @@ public class LoginActivity extends AppCompatActivity {
                 String inputEmail = Email.getText().toString();
                 String inputPassword = Password.getText().toString();
 
-                LoginManager loginManager = new LoginManager();
 
+                LoginManager loginManager = null;
                 try {
+                    loginManager = new LoginManager();
+
                     if(loginManager.isValidate(inputEmail, inputPassword)) {
 
                         startActivity(new Intent(LoginActivity.this, HomeActivity.class));
                     }
-
                     else Toast.makeText(
                             LoginActivity.this,
                             "Credenziali non corrette riprova",
