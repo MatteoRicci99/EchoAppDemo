@@ -37,6 +37,9 @@ public class RegistrationActivity extends AppCompatActivity {
 
         Nome = findViewById(R.id.Nome);
         Cognome = findViewById(R.id.Cognome);
+        Immobili = findViewById(R.id.nImmobili);
+        Utenze = findViewById(R.id.nUtenze);
+        Auto = findViewById(R.id.nAuto);
         Email = findViewById(R.id.Email);
         Password = findViewById(R.id.Password);
 
@@ -44,13 +47,13 @@ public class RegistrationActivity extends AppCompatActivity {
 
         DB = new DBHelper(this);
 
-
         Registrati.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 String inputNome = Nome.getText().toString();
                 String inputCognome = Cognome.getText().toString();
+                String inputImmobili = Immobili.getText().toString();
                 String inputEmail = Email.getText().toString();
                 String inputPassword = Password.getText().toString();
 

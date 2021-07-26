@@ -7,10 +7,13 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
+import com.google.android.material.tabs.TabLayout;
 import org.jetbrains.annotations.NotNull;
 
 public class ViewPagerAdapter extends FragmentPagerAdapter {
 
+
+    private String title[] = new String[] {"LUCE", "GAS", "AUTO"};
 
     public ViewPagerAdapter(@NonNull @NotNull FragmentManager fm) {
         super(fm);
@@ -38,7 +41,6 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
     @org.jetbrains.annotations.Nullable
     @Override
     public CharSequence getPageTitle(int position) {
-        position = position + 1;
-        return "Luce" +position;
+        return title[position];
     }
 }

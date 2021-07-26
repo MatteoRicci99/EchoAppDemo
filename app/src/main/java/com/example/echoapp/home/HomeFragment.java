@@ -14,9 +14,8 @@ public class HomeFragment extends Fragment {
     private TextView textView;
 
     public HomeFragment() {
-        // Required empty public constructor
-    }
 
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
