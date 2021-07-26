@@ -3,7 +3,9 @@ package com.example.echoapp.database;
 
 import java.sql.*;
 
-
+/**
+ * GUARDARE DBHelper è la classe giusta, non DBManager!
+ */
 public class DBManager {
 
     public static String JDBC_Driver = null;
@@ -80,3 +82,4 @@ public class DBManager {
         }
     }
 }
+

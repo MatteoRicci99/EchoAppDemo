@@ -7,18 +7,11 @@ import java.util.TimeZone;
 import java.util.UUID;
 
 public class Utils {
-    public static final String JDBC_Driver_SQLite = "org.sqlite.JDBC";
-    public static final String JDBC_URL_SQLite = "jdbc:sqlite:test.db";
+    public static final String JDBC_Driver_SQLite = "org.sqlite.jdbc";
+    public static final String JDBC_URL_SQLite = "jdbc:sqlite:echo.db";
 
     public static final String JDBC_Driver_MySQL = "com.mysql.cj.jdbc.Driver";
     public static final String JDBC_URL_MySQL = "jdbc:mysql://localhost:3306/jdbc_schema?user=nicola&password=qwertyuio&serverTimezone=" + TimeZone.getDefault().getID();
-
-    public static String ooprogrammingdir() {
-        String path = String.format("%s%s%s%s%s", System.getProperty("user.home"), System.getProperty("file.separator"),
-                "Desktop", System.getProperty("file.separator"), "ooprgramming");
-        new File(path).mkdirs();
-        return path;
-    }
 
     public static UUID asUUID(byte[] bytes) {
         ByteBuffer bb = ByteBuffer.wrap(bytes);
